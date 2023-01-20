@@ -1,8 +1,8 @@
 /*
   ==============================================================================
 
-    ProCoRat.cpp
-    Created: 20 Jan 2023 11:20:12am
+    HoofFuzz.cpp
+    Created: 20 Jan 2023 11:20:36am
     Author:  Trever Hillis
 
   ==============================================================================
@@ -17,6 +17,10 @@ ProCoRat::ProCoRat()
     // In your constructor, you should add any child components, and
     // initialise any special settings that your component needs.
 
+}
+
+ProCoRat::~ProCoRat()
+{
 }
 
 void ProCoRat::paint (juce::Graphics& g)
