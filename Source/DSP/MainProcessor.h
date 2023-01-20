@@ -11,7 +11,6 @@
 #pragma once
 
 #include <JuceHeader.h>
-#include <juce_dsp/processors/juce_ProcessorChain.h>
 #include "BigMuff.h"
 #include "FuzzFace.h"
 #include "HoofFuzz.h"
