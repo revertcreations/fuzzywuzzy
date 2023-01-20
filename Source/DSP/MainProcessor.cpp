@@ -14,6 +14,7 @@
 MainProcessor::MainProcessor()
 {
     processors.add(fuzzFace);
+    fuzzFaceUI.setFuzzFace(fuzzFace);
     processors.add(bigMuff);
     processors.add(proCoRat);
     processors.add(hoofFuzz);

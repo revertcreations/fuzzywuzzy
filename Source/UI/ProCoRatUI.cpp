@@ -9,7 +9,7 @@ ProCoRatUI::ProCoRatUI()
     addAndMakeVisible (gainSlider);
 
     gainLabel.setText ("Gain", juce::dontSendNotification);
-    gainLabel.attachToComponent (&gainSlider, juce::right);
+//    gainLabel.attachToComponent (&gainSlider, juce::right);
     addAndMakeVisible (gainLabel);
 }
 

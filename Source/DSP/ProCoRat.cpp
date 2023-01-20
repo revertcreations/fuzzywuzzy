@@ -19,10 +19,6 @@ ProCoRat::ProCoRat()
 
 }
 
-ProCoRat::~ProCoRat()
-{
-}
-
 void ProCoRat::paint (juce::Graphics& g)
 {
     /* This demo code just fills the component's background and
