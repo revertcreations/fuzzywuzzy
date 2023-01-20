@@ -4,18 +4,18 @@
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginManufacturer="RevertSounds">
   <MAINGROUP id="D8I9hl" name="Fuzzy Wuzzy">
     <GROUP id="{5D59D736-78B8-9C7C-75FF-94FB8FBBF860}" name="Source">
-      <GROUP id="{4067621F-3B1F-D7F6-927E-E48769C5152B}" name="DSP">
-        <FILE id="NlLKFE" name="MainProcessor.cpp" compile="1" resource="0"
-              file="Source/MainProcessor.cpp"/>
-        <FILE id="tmzQM5" name="MainProcessor.h" compile="0" resource="0" file="Source/MainProcessor.h"/>
-        <FILE id="MUHysF" name="BigMuff.cpp" compile="1" resource="0" file="Source/BigMuff.cpp"/>
-        <FILE id="VQVMiU" name="BigMuff.h" compile="0" resource="0" file="Source/BigMuff.h"/>
-        <FILE id="nGOL2V" name="HoofFuzz.cpp" compile="1" resource="0" file="Source/HoofFuzz.cpp"/>
-        <FILE id="V2QYBK" name="HoofFuzz.h" compile="0" resource="0" file="Source/HoofFuzz.h"/>
-        <FILE id="Nfox0t" name="ProCoRat.cpp" compile="1" resource="0" file="Source/ProCoRat.cpp"/>
-        <FILE id="QIiAlo" name="ProCoRat.h" compile="0" resource="0" file="Source/ProCoRat.h"/>
-        <FILE id="e3k2gW" name="FuzzFace.cpp" compile="1" resource="0" file="Source/FuzzFace.cpp"/>
-        <FILE id="hboUqO" name="FuzzFace.h" compile="0" resource="0" file="Source/FuzzFace.h"/>
+      <GROUP id="{1A7245B3-E8DB-ECF4-0955-ABB21E8DA888}" name="DSP">
+        <FILE id="vspEmc" name="BigMuff.cpp" compile="1" resource="0" file="Source/DSP/BigMuff.cpp"/>
+        <FILE id="lNhzCk" name="BigMuff.h" compile="0" resource="0" file="Source/DSP/BigMuff.h"/>
+        <FILE id="zVDrEV" name="FuzzFace.cpp" compile="1" resource="0" file="Source/DSP/FuzzFace.cpp"/>
+        <FILE id="hjnrE1" name="FuzzFace.h" compile="0" resource="0" file="Source/DSP/FuzzFace.h"/>
+        <FILE id="SbiRUT" name="HoofFuzz.cpp" compile="1" resource="0" file="Source/DSP/HoofFuzz.cpp"/>
+        <FILE id="vHYFRK" name="HoofFuzz.h" compile="0" resource="0" file="Source/DSP/HoofFuzz.h"/>
+        <FILE id="Pk5NlW" name="MainProcessor.cpp" compile="1" resource="0"
+              file="Source/DSP/MainProcessor.cpp"/>
+        <FILE id="GeFbkK" name="MainProcessor.h" compile="0" resource="0" file="Source/DSP/MainProcessor.h"/>
+        <FILE id="gzgGxS" name="ProCoRat.cpp" compile="1" resource="0" file="Source/DSP/ProCoRat.cpp"/>
+        <FILE id="w1PwC7" name="ProCoRat.h" compile="0" resource="0" file="Source/DSP/ProCoRat.h"/>
       </GROUP>
       <FILE id="nbXHH4" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
