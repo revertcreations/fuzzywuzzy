@@ -17,51 +17,34 @@
 #include "HoofFuzz.h"
 #include "ProCoRat.h"
 
-class MainProcessor : public juce::dsp::ProcessorBase
+class MainProcessor
 {
 public:
     MainProcessor()
     {
-        processors.add(fuzzFace);
-        processors.add(bigMuff);
-        processors.add(proCoRat);
-        processors.add(hoofFuzz);
+        fuzzImplementations.push_back(std::make_unique<FuzzFace>());
+        fuzzImplementations.push_back(std::make_unique<BigMuff>());
+        fuzzImplementations.push_back(std::make_unique<ProCoRat>());
+        fuzzImplementations.push_back(std::make_unique<HoofFuzz>());
     }
 
-    void prepare (const juce::dsp::ProcessSpec& spec) override
+    void prepare(const juce::dsp::ProcessSpec& spec)
     {
-        // set up the audio processing buffer and any other variables you might need
+        for (auto& fuzz : fuzzImplementations)
+            fuzz->prepare(spec);
     }
-
-    void process (const juce::dsp::ProcessContextReplacing<float>& context) override
+    void process(const juce::dsp::ProcessContextReplacing<float>& context)
     {
-        // switch between the different fuzz implementations here
-        switch (currentFuzzType)
-        {
-            case FuzzType::FuzzFace:
-                fuzzFace.process(context);
-                break;
-            case FuzzType::BigMuff:
-                bigMuff.process(context);
-                break;
-            case FuzzType::ProCoRat:
-                proCoRat.process(context);
-                break;
-            case FuzzType::HoofFuzz:
-                hoofFuzz.process(context);
-                break;
-        }
+        fuzzImplementations[currentFuzzType]->process(context);
     }
-
-    void reset() override
+    void reset()
     {
-        // reset any state variables
+        for (auto& fuzz : fuzzImplementations)
+            fuzz->reset();
     }
 
 private:
-    FuzzFace fuzzFace;
-    BigMuff bigMuff;
-    ProCoRat proCoRat;
-    HoofFuzz hoofFuzz;
-    FuzzType currentFuzzType = FuzzType::FuzzFace;
+    std::vector<std::unique_ptr<juce::dsp::ProcessorBase>> fuzzImplementations;
+    int currentFuzzType = 0;
 };
+
