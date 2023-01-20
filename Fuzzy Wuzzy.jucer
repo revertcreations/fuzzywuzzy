@@ -4,6 +4,16 @@
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginManufacturer="RevertSounds">
   <MAINGROUP id="D8I9hl" name="Fuzzy Wuzzy">
     <GROUP id="{5D59D736-78B8-9C7C-75FF-94FB8FBBF860}" name="Source">
+      <GROUP id="{D878D2A9-54FE-2CA6-A96D-4B7EC0115168}" name="UI">
+        <FILE id="f5jP9v" name="BigMuffUI.cpp" compile="1" resource="0" file="Source/UI/BigMuffUI.cpp"/>
+        <FILE id="NgRX0s" name="BigMuffUI.h" compile="0" resource="0" file="Source/UI/BigMuffUI.h"/>
+        <FILE id="ErKZNC" name="FuzzFaceUI.cpp" compile="1" resource="0" file="Source/UI/FuzzFaceUI.cpp"/>
+        <FILE id="UzbTvF" name="FuzzFaceUI.h" compile="0" resource="0" file="Source/UI/FuzzFaceUI.h"/>
+        <FILE id="lE3e7U" name="HoofFuzzUI.cpp" compile="1" resource="0" file="Source/UI/HoofFuzzUI.cpp"/>
+        <FILE id="fRn7MT" name="HoofFuzzUI.h" compile="0" resource="0" file="Source/UI/HoofFuzzUI.h"/>
+        <FILE id="fnu6ts" name="ProCoRatUI.cpp" compile="1" resource="0" file="Source/UI/ProCoRatUI.cpp"/>
+        <FILE id="X8eGqT" name="ProCoRatUI.h" compile="0" resource="0" file="Source/UI/ProCoRatUI.h"/>
+      </GROUP>
       <GROUP id="{1A7245B3-E8DB-ECF4-0955-ABB21E8DA888}" name="DSP">
         <FILE id="vspEmc" name="BigMuff.cpp" compile="1" resource="0" file="Source/DSP/BigMuff.cpp"/>
         <FILE id="lNhzCk" name="BigMuff.h" compile="0" resource="0" file="Source/DSP/BigMuff.h"/>
